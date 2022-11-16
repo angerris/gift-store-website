@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Radomir\ Tinkov\ -\ Gilroy-Light.woff") format("woff2"),
+    url("../fonts/Radomir\ Tinkov\ -\ Gilroy-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Radomir\ Tinkov\ -\ Gilroy-ExtraBold.woff") format("woff2"),
+    url("../fonts/Radomir\ Tinkov\ -\ Gilroy-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Homemade Apple";
+  src: url("../fonts/HomemadeApple-Regular.woff") format("woff2"),
+    url("../fonts/HomemadeApple-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
