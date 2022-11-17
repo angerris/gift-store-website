@@ -1,25 +1,10 @@
 @import url("../fonts/fonts.css");
 @import url("variables.css");
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import url("buttons.css");
+@import url("reset.css");
 
 body {
   font-family: "Gilroy";
-}
-
-button {
-  border: none;
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
 }
 
 .header {
@@ -29,7 +14,6 @@ button {
 .header_list li {
   list-style: none;
   display: inline-block;
-  font-family: "Gilroy";
 }
 
 .header_list {
@@ -55,23 +39,8 @@ button {
   font-family: "Homemade Apple";
 }
 
-.button {
-  color: var(--orange);
-  padding: 13px 20px;
-  border: 1px solid var(--orange);
-  border-radius: 5px;
-  text-decoration: none;
-  font-family: "Gilroy";
-  text-transform: uppercase;
+.header-btn {
   margin-left: 330px;
-  transition: 0.2s;
-}
-
-.button:hover {
-  box-shadow: 0px 0px 11px 4px rgba(247, 148, 30, 0.15);
-  -webkit-box-shadow: 0px 0px 11px 4px rgba(247, 148, 30, 0.15);
-  -moz-box-shadow: 0px 0px 11px 4px rgba(247, 148, 30, 0.15);
-  transition: 0.2s;
 }
 
 .hero-side-image-right {
@@ -88,26 +57,10 @@ button {
   font-size: 20px;
   margin: 35px 0 60px 0;
   line-height: 28.13px;
-  font-family: "Gilroy";
 }
 .hero-button-primary {
   color: #fff;
-  background-color: var(--orange);
   padding: 20px 25px;
-  border: 1px solid var(--orange);
-  border-radius: 5px;
-  text-decoration: none;
-  font-family: "Gilroy";
-  font-size: 18px;
-  text-transform: uppercase;
-  transition: 0.2s;
-}
-
-.hero-button-primary:hover {
-  box-shadow: 0px 0px 11px 4px rgba(247, 148, 30, 0.15);
-  -webkit-box-shadow: 0px 0px 11px 4px rgba(247, 148, 30, 0.15);
-  -moz-box-shadow: 0px 0px 11px 4px rgba(247, 148, 30, 0.15);
-  transition: 0.2s;
 }
 
 .hero-side-image-left {
@@ -126,20 +79,7 @@ button {
   margin: 30px 0 50px 0;
 }
 .hero-button-secondary {
-  color: var(--orange);
   padding: 20px 40px;
-  border: 1px solid var(--orange);
-  border-radius: 5px;
-  text-decoration: none;
-  font-family: "Gilroy";
-  text-transform: uppercase;
-  transition: 0.2s;
-}
-.hero-button-secondary:hover {
-  box-shadow: 0px 0px 11px 4px rgba(247, 148, 30, 0.15);
-  -webkit-box-shadow: 0px 0px 11px 4px rgba(247, 148, 30, 0.15);
-  -moz-box-shadow: 0px 0px 11px 4px rgba(247, 148, 30, 0.15);
-  transition: 0.2s;
 }
 
 .top-hero-content {
@@ -155,7 +95,7 @@ button {
   padding: 150px 150px 100px 100px;
   height: 600px;
   width: 50%;
-  font-family: "Gilroy";
+
   background-color: var(--bgColor);
 }
 
@@ -201,18 +141,6 @@ button {
   font-size: 20px;
   margin-bottom: 70px;
 }
-.card_button {
-  text-decoration: none;
-  color: #000;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-}
-.card_button:hover {
-  text-decoration: underline;
-}
 
 .cta_section {
   height: 240px;
@@ -237,47 +165,34 @@ button {
   vertical-align: bottom;
   margin-bottom: 15px;
 }
-.button-primary {
+.cta-btn-primary {
   margin-left: 200px;
-  text-transform: uppercase;
-  text-decoration: none;
   color: #f1f1f2;
   font-size: 18px;
   padding: 18px 25px;
   border: 1px solid #231f20;
-  border-radius: 5px;
   background-color: #231f20;
-  font-family: "Gilroy";
-  transition: 0.2s;
 }
-.button-primary:hover {
+.cta-btn-primary:hover {
   box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.15);
   transition: 0.2s;
 }
 
-.button-secondary {
-  text-transform: uppercase;
+.cta-btn-secondary {
   color: #231f20;
   margin-left: 16px;
   padding: 18px 25px;
   border: 1px solid #231f20;
-  border-radius: 5px;
-  text-decoration: none;
-  font-family: "Gilroy";
-  text-decoration: none;
-  font-size: 18px;
-  transition: 0.2s;
 }
-.button-secondary:hover {
+.cta-btn-secondary:hover {
   box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.15);
   transition: 0.2s;
 }
 .posts-blog {
-  font-family: "Gilroy";
   padding: 90px 135px 80px 135px;
   height: 1024px;
 }
@@ -314,7 +229,6 @@ button {
   margin-bottom: 27px;
   font-size: 14px;
   color: #fff;
-  font-family: "Gilroy";
 }
 .blog-block-title {
   font-size: 48px;
@@ -324,10 +238,6 @@ button {
 .blog-button {
   color: #fff;
   font-size: 18px;
-  text-decoration: none;
-}
-.blog-button:hover {
-  text-decoration: underline;
 }
 .blog-cards {
   margin: 40px 0px auto;
@@ -347,13 +257,6 @@ button {
   font-size: 18px;
 }
 
-.blog-card-button {
-  color: #000;
-  text-decoration: none;
-}
-.blog-card-button:hover {
-  text-decoration: underline;
-}
 .blog-card {
   padding: 50px;
   width: 570px;
@@ -368,7 +271,6 @@ button {
 }
 
 .footer {
-  font-family: "Gilroy";
   background-color: #fafafa;
   height: 410px;
   padding-top: 115px;
@@ -431,5 +333,4 @@ button {
 .copyright {
   text-align: center;
   font-size: 14px;
-  font-family: "Gilroy";
 }
